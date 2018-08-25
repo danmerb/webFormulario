@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario</title>
+</head>
+<body>
+    <header><h1 align="center">Formulario</h1>
+    </header>
+    <form action="index.html" method="POST">
+
+        <fieldset>
+            <legend>Categoria Personal</legend>
+        
+            <label for="name">First Name</label>
+            <input type="text" name="name" id="name" required pattern="[a-z]{5,12}" placeholder="First Name">
+
+            <label for="lastname">Last Name</label>
+            <input type="text" name="lastname" id="lastname" required pattern="[a-z]{5,12}" placeholder="Last Name">
+
+            <label for="animfavorito"> Animal Favotito</label>
+            <input type="text" name="animfavorito" id="animfavorito" required pattern="[a-z]{2,12}" placeholder="Animal Favorito">
+        
+            <label for="birthday">Birthday</label>
+            <input type="date" name="birthday" id="birthday">
+
+          
+        </fieldset>
+        
+        <br>
+        <fieldset>
+            <legend>Account</legend>
+            <div>
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" placeholder="Write your password" required pattern="{8,12}">
+
+                <label for="password">Confirm Password</label>
+                <input type="password" name="password" id="password" placeholder="Repeat Password" title="Must contain at least one number and one uppercase and lowercase letter, A least 8 or more characters" required pattern="{8,12}">>
+
+                
+
+                
+            </div>
+          
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Contact</legend>
+            <div>
+                <label for="direccion">Direccion</label>
+                <input type="text" name="direccion" id="direccion" placeholder="Direccion">
+
+                <label for="city">City</label>
+                <input type="text" name="city" id="city" placeholder="City">
+
+                <label for="country">Country</label>
+                <input type="text" name="country" id="country" placeholder="Country">
+
+            </div>
+          
+        </fieldset>
+        
+      <br>
+
+        <input type="submit" value="Entrar">
+               
+        
+    </form>
+</body>
+</html>
